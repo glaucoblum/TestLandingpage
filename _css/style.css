@@ -1,0 +1,454 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 54px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .h3 {
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: black;
+  }
+
+
+.heroText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+.heroheader{
+  background-size: cover;
+  background-color: #eee;
+}
+
+.hero {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: auto;
+  padding: 40px 0px 14px;
+  background-color: #eee;
+}
+
+button, .but {
+  height: 40px;
+  width: 200px;
+  background-color: #6100ff;
+  border: none;
+  border-radius: 90px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form{
+  height: 40px;
+  width: 80%;
+
+  font-size: 18px;
+}
+
+.wtMore {
+  width: 160px;
+  margin-left: 20px;
+  background-color:rgba(255,255,255,0);
+  color: #6100ff;
+}
+
+.svgIcon {
+  float:right;
+  margin-right: 10px;
+  height: 24px;
+  fill: #6100ff;
+  transform: translateY(0px);
+
+}
+
+.dialogbox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 430px;
+  height: 200px;
+}
+
+.txtBox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contentTxt {
+padding: 0px 40px 0px 20px;
+z-index: 1;
+}
+
+.imgPad{
+padding: 30px 0px 0px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.imageCenter {
+  display: block;
+  /*max-width: 50%;*/
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagecircle {
+  border-radius: 50%;
+  margin-bottom: -10px;
+}
+
+.pad {
+  margin-bottom: -10px;
+}
+.videoPad{
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.midKit{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.boxRot{
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+  transform-origin: 100% 25%;
+  z-index: -1;
+}
+
+.splitScreen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:40px;
+  padding-bottom: 40px;
+
+}
+
+.txtBox2{
+  padding: 0px 30px;
+  margin-top: 00px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.txtBox3{
+  padding: 0px;
+  margin-top: 00px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.contactBox{
+  height: 800px;
+}
+
+.colorb{
+    background-color: #eee;
+}
+
+.colorg{
+    background-color: gray;
+}
+
+.colorw{
+    background-color: white;
+}
+
+.colorP{
+    background-color: #ddd;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+  /* GRID */
+
+  /* CONTAINER */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+  /* ROW */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+
+
+  .col-xs-12 {
+    grid-column: span 12
+  }
+
+  .col-xs-11 {
+    grid-column: span 11
+  }
+
+  .col-xs-10 {
+    grid-column: span 10
+  }
+
+  .col-xs-9 {
+    grid-column: span 9
+  }
+
+  .col-xs-8 {
+    grid-column: span 8
+  }
+
+  .col-xs-7 {
+    grid-column: span 7
+  }
+
+  .col-xs-6 {
+    grid-column: span 6
+  }
+
+  .col-xs-5 {
+    grid-column: span 5
+  }
+
+  .col-xs-4 {
+    grid-column: span 4
+  }
+
+  .col-xs-3 {
+    grid-column: span 3
+  }
+
+  .col-xs-2 {
+    grid-column: span 2
+  }
+
+  .col-xs-1 {
+    grid-column: span 1
+  }
+
+  @media (min-width: 768px) {
+    .col-sm-12 {
+      grid-column: span 12
+    }
+
+    .col-sm-11 {
+      grid-column: span 11
+    }
+
+    .col-sm-10 {
+      grid-column: span 10
+    }
+
+    .col-sm-9 {
+      grid-column: span 9
+    }
+
+    .col-sm-8 {
+      grid-column: span 8
+    }
+
+    .col-sm-7 {
+      grid-column: span 7
+    }
+
+    .col-sm-6 {
+      grid-column: span 6
+    }
+
+    .col-sm-5 {
+      grid-column: span 5
+    }
+
+    .col-sm-4 {
+      grid-column: span 4
+    }
+
+    .col-sm-3 {
+      grid-column: span 3
+    }
+
+    .col-sm-2 {
+      grid-column: span 2
+    }
+
+    .col-sm-1 {
+      grid-column: span 1
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col-md-12 {
+      grid-column: span 12
+    }
+
+    .col-md-11 {
+      grid-column: span 11
+    }
+
+    .col-md-10 {
+      grid-column: span 10
+    }
+
+    .col-md-9 {
+      grid-column: span 9
+    }
+
+    .col-md-8 {
+      grid-column: span 8
+    }
+
+    .col-md-7 {
+      grid-column: span 7
+    }
+
+    .col-md-6 {
+      grid-column: span 6
+    }
+
+    .col-md-5 {
+      grid-column: span 5
+    }
+
+    .col-md-4 {
+      grid-column: span 4
+    }
+
+    .col-md-3 {
+      grid-column: span 3
+    }
+
+    .col-md-2 {
+      grid-column: span 2
+    }
+
+    .col-md-1 {
+      grid-column: span 1
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .col-lg-12 {
+      grid-column: span 12
+    }
+
+    .col-lg-11 {
+      grid-column: span 11;
+    }
+
+    .col-lg-10 {
+      grid-column: span 10
+    }
+
+    .col-lg-9 {
+      grid-column: span 9
+    }
+
+    .col-lg-8 {
+      grid-column: span 8
+    }
+
+    .col-lg-7 {
+      grid-column: span 7
+    }
+
+    .col-lg-6 {
+      grid-column: span 6
+    }
+
+    .col-lg-5 {
+      grid-column: span 5
+    }
+
+    .col-lg-4 {
+      grid-column: span 4
+    }
+
+    .col-lg-3 {
+      grid-column: span 3
+    }
+
+    .col-lg-2 {
+      grid-column: span 2
+    }
+
+    .col-lg-1 {
+      grid-column: span 1
+    }
+  }
